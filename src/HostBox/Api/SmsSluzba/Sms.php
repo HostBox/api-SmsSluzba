@@ -12,6 +12,15 @@ class Sms implements ISms {
     private $text;
 
 
+    /**
+     * @param string $recipient
+     * @param string $text
+     */
+    function __construct($recipient, $text) {
+        $this->recipient = $recipient;
+        $this->text = $text;
+    }
+
     /** @inheritdoc */
     public function setRecipient($recipient) {
         $this->recipient = $recipient;

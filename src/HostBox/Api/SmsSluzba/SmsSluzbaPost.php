@@ -3,12 +3,9 @@
 namespace HostBox\Api\SmsSluzba;
 
 
-class SmsSluzbaPost {
+class SmsSluzbaPost implements ISmsSluzba {
 
-    const
-        AUTH_MSG_LENGTH = 31,
-        API_URL = 'https://smsgateapi.sluzba.cz/apipost30/sms';
-
+    const AUTH_MSG_LENGTH = 31;
 
     /** @var \HostBox\Api\SmsSluzba\Config */
     private $config;
@@ -18,12 +15,9 @@ class SmsSluzbaPost {
         $this->config = $config;
     }
 
-    /**
-     * @param ISms $sms
-     * @return bool|string
-     */
-    public function send(ISms $sms) {
-        if (!($handle = fopen(self::API_URL, 'rb', FALSE, $this->getStreamContext($sms))))
+    /** @inheritdoc */
+    public function sendSms(ISms $sms) {
+        if (!($handle = @fopen(self::API_URL_POST, 'rb', FALSE, $this->getStreamContext($sms))))
             return FALSE;
 
         $contents = '';

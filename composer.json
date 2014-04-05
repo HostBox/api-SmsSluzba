@@ -1,0 +1,23 @@
+{
+    "name": "hostbox/api-smssluzba",
+    "description": "Enjoyable Api for sms.sluzba.cz",
+    "keywords": ["api", "sms", "sms.sluzba", "hostbox"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Macháň",
+            "email": "machan@hostbox.cz"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "HostBox\\Api\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "nette/tester": "~1.0.0"
+    }
+}

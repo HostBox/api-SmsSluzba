@@ -30,6 +30,10 @@ class SmsResponse {
             throw new LogicException('SMS Response is not valid XML');
         }
 
+        if (!isset($xml->id) || !isset($xml->message)) {
+            throw new LogicException('SMS Response is not valid. Some parts are missing.');
+        }
+
         $this->id = (string) $xml->id;
         $this->message = (string) $xml->message;
     }

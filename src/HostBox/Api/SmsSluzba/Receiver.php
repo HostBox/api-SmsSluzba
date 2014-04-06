@@ -35,7 +35,7 @@ class Receiver {
     public function getReceive() {
         $missing = array();
         foreach ($this->keys as $key) {
-            if (!array_key_exists($key, $this->data)) {
+            if (!isset($this->data[$key])) {
                 $missing[] = $key;
             }
         }

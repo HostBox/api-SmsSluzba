@@ -7,7 +7,7 @@ Package Installation
 The best way to install sms.sluzba.cz API is using [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require hostbox/nette-paypal-payment-buttons
+$ composer require hostbox/api-smssluzba
 ```
 
 [Packagist - Versions](https://packagist.org/packages/hostbox/api-smssluzba)

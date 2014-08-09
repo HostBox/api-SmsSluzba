@@ -46,51 +46,37 @@ class Receive {
         $this->time = $time;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getIdentifier() {
         return $this->identifier;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getKeyword() {
         return $this->keyword;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getRecipient() {
         return $this->recipient;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getSender() {
         return $this->sender;
     }
 
-    /**
-     * @return int
-     */
+    /** @return int */
     public function getSmsid() {
         return $this->smsid;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getText() {
         return $this->text;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getTime() {
         return $this->time;
     }

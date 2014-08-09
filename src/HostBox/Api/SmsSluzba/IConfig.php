@@ -15,4 +15,5 @@ interface IConfig {
 
     /** @return int */
     public function getBlockSize();
+
 }

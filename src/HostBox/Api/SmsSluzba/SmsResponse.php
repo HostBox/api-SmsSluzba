@@ -14,9 +14,8 @@ class SmsResponse {
     /** @var string */
     private $message;
 
-    /**
-     * @param string $response
-     */
+
+    /** @param string $response */
     public function __construct($response) {
         $this->process($response);
     }
@@ -38,16 +37,12 @@ class SmsResponse {
         $this->message = (string) $xml->message;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getId() {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getMessage() {
         return $this->message;
     }

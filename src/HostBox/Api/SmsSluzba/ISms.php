@@ -11,9 +11,7 @@ interface ISms {
      */
     public function setRecipient($recipient);
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getRecipient();
 
     /**
@@ -22,9 +20,7 @@ interface ISms {
      */
     public function setText($text);
 
-    /**
-     * @return string
-     */
+    /** @return string */
     public function getText();
 
 }

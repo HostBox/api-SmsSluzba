@@ -7,7 +7,7 @@ class SmsSluzbaPost implements ISmsSluzba {
 
     const AUTH_MSG_LENGTH = 31;
 
-    /** @var \HostBox\Api\SmsSluzba\Config */
+    /** @var Config */
     private $config;
 
 

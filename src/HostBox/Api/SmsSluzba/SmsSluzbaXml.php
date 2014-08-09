@@ -7,7 +7,7 @@ use HostBox\Api\SmsSluzba\Exceptions\RuntimeException;
 
 class SmsSluzbaXml implements ISmsSluzba {
 
-    /** @var \HostBox\Api\SmsSluzba\Config */
+    /** @var Config */
     private $config;
 
 

@@ -21,9 +21,7 @@ class Receiver {
     private $data;
 
 
-    /**
-     * @param array $data
-     */
+    /** @param array $data */
     public function __construct($data = array()) {
         $this->data = $data;
     }
